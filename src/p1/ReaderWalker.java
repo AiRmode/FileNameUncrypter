@@ -16,11 +16,7 @@ public class ReaderWalker {
     private static String fileExtention = ".cbf";
     private static String emailPrefix = "email-iizomer@aol.com";
     private static int maxFileSize = 99999999;//by default - up to 100mb
-    public static final String VER_REGEXP = "(?<=\\{" + virVersion + "\\}\\{).*?(?=\\})";//(?<=\{CL 1.2.0.0\}\{).*?(?=\})
-    public static final String WINDOWS_1251 = "windows-1251";
-    public static final String UTF_8 = "UTF-8";
-    public static final String ISO_8859_1 = "ISO-8859-1";
-    public static final String ISO_8859_5 = "ISO-8859-5";
+    private String VER_REGEXP = "(?<=\\{" + virVersion + "\\}\\{).*?(?=\\})";//(?<=\{CL 1.2.0.0\}\{).*?(?=\})
     private String basePath;
     private Map<String, String> files = new HashMap<String, String>();
     private Map<String, String> largeFiles = new HashMap<String, String>();
